@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .2s linear;
+}
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.box-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.box-container .box {
+    width: 700px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px #0007;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.box-container .box img {
+    margin-right: 30px;
+}
+.box-container .box .content {
+    display: flex;
+    padding: 0 10px;
+}
+.box-container .box .content .icons {
+    background-color: #fff;
+    margin: 0 10px;
+}
+.box-container .box .content .icons i {
+    font-size: 20px;
+    margin: 10px 13px;
+    display: block;
+    color: #3a6cf4;
+}
+.box-container .box .content .icons i:first-child {
+    margin-bottom: 70px;
+}
+
+.box-container .box .content .info .tatile {
+    font-size: 29px;
+    color: #fff;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+.box-container .box .content .info .tatile span {
+    color: #3a6cf4;
+}
+
+.box-container .box .content .info .post {
+    display: block;
+    font-size: 18px;
+    color: #ccc;
+    padding-bottom: 32px;
+}
+.box-container .box .content .info a {
+    display: block;
+    color: #aaa;
+    padding: 6px 0;
+}
+.box-container .box .content .info a:hover {
+    color: #fff;
+}
+
+
+
+.box-container .box .contact-icons {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 7px;
+    height: 225px;
+    margin-left: auto;
+}
+
+.box-container .box .contact-icons a {
+    margin: 10xp;
+    font-size: 23px;
+    color: #666;
+}
+.box-container .box .contact-icons a:hover {
+    color: #3a6cf4;
+}
+
+@media (max-width:650px) {
+
+    .box-container .box {
+        flex-direction: column;
+        width: 340px;
+    }
+
+    .box-container .box img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .box-container .box .content {
+        padding: 30px 5px;
+    }
+    .box-container .box .contact-icons {
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+} 
